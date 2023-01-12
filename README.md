@@ -1,4 +1,4 @@
-# Smart Manufacturing Analytics Dashboard
+# Cockpit dashboard for manufacturing plant
 
 ## Objective:
 The objective of the project is to develop a cockpit dashboard that can collect data from various systems connected to the manufacturing plant, clean and process the data, and generate real-time and historical reports. The dashboard provides a comprehensive view of the plant's operations, including machine utilization, production rates, quality control metrics, and real-time temperature variations of machinery components.
