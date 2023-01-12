@@ -10,13 +10,17 @@ By using our solution, manufacturers can gain valuable insights into their produ
 
 This project utilizes a variety of technologies to collect, process, and analyze data from manufacturing systems. These include:
 
-### Databricks
-Databricks is a platform for big data processing and machine learning. It provides a collaborative, cloud-based environment for data engineers, data scientists, and business analysts to work together on data projects. In this project, Databricks is used as the primary platform for data processing and analysis.
-
-### Apache PySpark
-Apache PySpark is the Python library for Spark programming. It allows you to write Spark applications using Python, and provides a simple API for distributed data processing. In this project, PySpark is used to process and analyze large datasets.
-
-### Python
-Python is a powerful and versatile programming language that is widely used for data science and machine learning. In this project, Python is used to write the code for data preprocessing and data analysis.
+### PySpark:
+PySpark is an open-source library for Python that allows for data processing and analysis using the Spark framework. It allows for the handling of large datasets and the ability to perform complex data operations.
+### DataLake:
+A data lake is a centralized repository that allows for the storage of raw, unstructured data at any scale. It provides a single source of truth for all data in the manufacturing plant.
+### Databricks:
+Databricks is a cloud-based platform for data engineering, machine learning, and analytics. It allows for the creation of data pipelines and the ability to run PySpark scripts.
+### PowerBI:
+Power BI is a business intelligence tool that allows for the creation of interactive visualizations and reports. It allows for the representation of data in a user-friendly format.
+### Kafka:
+Kafka is an open-source message broker that allows for the real-time processing of data streams. It allows for the integration of data from various sources in real-time.
+### Python:
+Python is a programming language that is used for data processing and analysis. It allows for the creation of scripts and the ability to work with various libraries such as PySpark and Pandas.
 
 
