@@ -7,8 +7,10 @@ The objective of the project is to develop a cockpit dashboard that can collect 
 The scope of this project includes the development of a cockpit dashboard that can collect and process data from the MES and IoT-enabled temperature sensors. The dashboard displays real-time and historical data in a user-friendly format and provide alerts and notifications for any anomalies or issues detected. Additionally, the project scope includes the development of data pipelines to collect, clean and process the data from different sources.
 
 ## Data Sources:
-1.Manufacturing Execution System (MES) data is available in AWS S3 buckets as daily data dumps in different formats such as Parquet, CSV, and JSON.
-2.IoT enabled temperature sensor data is continuously streamed to a message bus (Kafka) in JSON format.
+1. Manufacturing Execution System (MES) data is available in AWS S3 buckets as daily data dumps in different formats such as Parquet, CSV, and JSON.
+
+2. IoT enabled temperature sensor data is continuously streamed to a message bus (Kafka) in JSON format.
+
 ## Architecture:
 
 The project will be implemented using a data lakehouse architecture, which combines the best features of both data warehousing and data lakes to provide a centralized platform for storing, processing, and analyzing large amounts of structured and unstructured data.
