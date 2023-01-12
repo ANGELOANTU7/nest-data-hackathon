@@ -23,4 +23,10 @@ Kafka is an open-source message broker that allows for the real-time processing 
 ### Python:
 Python is a programming language that is used for data processing and analysis. It allows for the creation of scripts and the ability to work with various libraries such as PySpark and Pandas.
 
+## Objective:
+The objective of the project is to develop a cockpit dashboard that can collect data from various systems connected to the manufacturing plant, clean and process the data, and generate real-time and historical reports. The dashboard provides a comprehensive view of the plant's operations, including machine utilization, production rates, quality control metrics, and real-time temperature variations of machinery components.
+
+## Scope:
+The scope of this project includes the development of a cockpit dashboard that can collect and process data from the MES and IoT-enabled temperature sensors. The dashboard displays real-time and historical data in a user-friendly format and provide alerts and notifications for any anomalies or issues detected. Additionally, the project scope includes the development of data pipelines to collect, clean and process the data from different sources.
+
 
