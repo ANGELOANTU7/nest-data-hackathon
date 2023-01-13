@@ -1,0 +1,33 @@
+S3 BUCKET USED AS DATA SOURCE
+
+1.item
+File location : s3a://hackathon2023/data/SCSupplyChain/item/item.parquet
+
+2.warehouse entry
+File location : s3a://hackathon2023/data/SCSupplyChain/warehouse/warehouse.csv
+
+3.production bom line
+File location : s3a://hackathon2023/data/SCSupplyChain/production/production.txt
+
+4.plans shift wise
+File location : s3a://hackathon2023/data/OperationsManagement/PlansShiftWise/PlansShiftWise.csv
+
+5.results
+File location: s3a://hackathon2023/data/OperationsManagement/Results/Results.csv
+
+6.routing stages
+File location : s3a://hackathon2023/data/OperationsManagement/RoutingStages/RoutingStages.parquet
+
+7.work orders
+File location : s3a://hackathon2023/data/OperationsManagement/Workorders/Workorders.csv
+
+8.items
+File location : s3a://hackathon2023/data/OperationsManagement/Items/Items.txt
+
+
+KAFKA USED AS DATA SOURCE
+
+1.temperature reading
+Kafka url : ec2-65-0-72-75.ap-south-1.compute.amazonaws.com:9092
+
+
