@@ -15,6 +15,21 @@ The scope of this project includes the development of a cockpit dashboard that c
 
 The project will be implemented using a data lakehouse architecture, which combines the best features of both data warehousing and data lakes to provide a centralized platform for storing, processing, and analyzing large amounts of structured and unstructured data.
 
+### Data Sources Layer:
+This layer includes all the raw data that is ingested into the data lake. This can include data from various sources such as databases, APIs, and file systems.
+
+### Ingestion Layer:
+This layer includes all the processes and tools used to ingest data from the various sources into the data lake. This can include data extraction, data validation, and data transformation.
+
+### Meta Data Layer:
+This layer includes all the information about the data in the data lake. This can include information about the data structure, data lineage, and data quality.
+
+### Processing Layer:
+This layer includes all the processes and tools used to transform and analyze the data in the data lake. This can include data cleaning, data integration, and data modeling.
+
+### Service Layer:
+This layer is responsible for providing an API for external systems to access the processed data and perform various operations on it such as querying and visualizing the data.
+
 ## Technologies used
 
 This project utilizes a variety of technologies to collect, process, and analyze data from manufacturing systems. These include:
