@@ -20,8 +20,9 @@ jobs:
         echo $CONDA/bin >> $GITHUB_PATH
     - name: Install dependencies
       run: |
-        conda install -n base requirements.txt
+        conda update --all
         conda env update --file environment.yml --name base
+        conda install -n base requirements.txt
     - name: Lint with flake8
       run: |
         conda install flake8
