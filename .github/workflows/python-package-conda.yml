@@ -21,9 +21,9 @@ jobs:
     - name: Install dependencies
       run: |
         conda update --all
-        pip install -r requirements.txt
-        conda env update --file environment.yml 
-        conda install -n base requirements.txt
+        conda install pyspark
+        #pip install -r requirements.txt
+        #conda env update --file environment.yml 
     - name: Lint with flake8
       run: |
         conda install flake8
