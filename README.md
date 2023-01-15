@@ -1,4 +1,5 @@
 # Cockpit dashboard for manufacturing plant
+[![Python Package using Conda](https://github.com/ANGELOANTU7/nest-data-hackathon/actions/workflows/python-package-conda.yml/badge.svg?branch=master)](https://github.com/ANGELOANTU7/nest-data-hackathon/actions/workflows/python-package-conda.yml)
 
 ## Objective:
 The objective of the project is to develop a cockpit dashboard that can collect data from various systems connected to the manufacturing plant, clean and process the data, and generate real-time and historical reports. The dashboard provides a comprehensive view of the plant's operations, including machine utilization, production rates, quality control metrics, and real-time temperature variations of machinery components.
