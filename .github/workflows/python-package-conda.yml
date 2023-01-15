@@ -22,12 +22,12 @@ jobs:
       run: |
         conda update --all
         conda install pyspark
-        python pip install vendor --upgrade
-        python pip install requests --upgrade
-        python pip install chardet --upgrade
-        python pip install distlib --upgrade
-        python pip install urllib3 --upgrade
-        python pip install pycryptodome --upgrade
+        pip install vendor --upgrade
+        pip install requests --upgrade
+        pip install chardet --upgrade
+        pip install distlib --upgrade
+        pip install urllib3 --upgrade
+        pip install pycryptodome --upgrade
         pip install -r requirements.txt
         #conda env update --file environment.yml 
     - name: Lint with flake8
