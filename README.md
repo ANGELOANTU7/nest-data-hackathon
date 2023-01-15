@@ -21,7 +21,7 @@ The scope of this project includes the development of a cockpit dashboard that c
 ## Medallion Architecture
 A medallion architecture is a data design pattern used to logically organise data in a lake house, with the goal of incrementally and progressively improving the structure and quality of data as it flows through each layer of the architecture (from Bronze ⇒ Silver ⇒ Gold layer tables). Medallion architectures are sometimes also referred to as "multi-hop" architectures.
 
-![Medallion_architecture](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvP_MVeAGq5I1vO1nxQAbY2PihP9hRHz357g&usqp=CAU)
+
 
 ### Data Sources Layer
 This layer includes all the raw data that is ingested into the data lake. This can include data from various sources such as databases, APIs, and file systems.
