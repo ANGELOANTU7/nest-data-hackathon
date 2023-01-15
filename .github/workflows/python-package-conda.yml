@@ -23,7 +23,7 @@ jobs:
         conda update --all
         conda install pyspark
         python -m venv venv
-        venv\Scripts\Activate.ps1
+        venv/Scripts/Activate.ps1
         #pip install -r requirements.txt
         conda env update --file environment.yml 
     - name: Lint with flake8
