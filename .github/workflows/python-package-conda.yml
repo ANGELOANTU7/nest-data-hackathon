@@ -39,4 +39,4 @@ jobs:
         #flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test The full code step by step
       run: |
-        python -u "2_INGESTION_LAYER\S3_DATAEXTRACT_TXTS.py"       
+        python -u "2_INGESTION_LAYER/S3_DATAEXTRACT_TXTS.py"       
