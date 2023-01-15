@@ -21,22 +21,24 @@ The scope of this project includes the development of a cockpit dashboard that c
 ## Medallion Architecture
 A medallion architecture is a data design pattern used to logically organise data in a lake house, with the goal of incrementally and progressively improving the structure and quality of data as it flows through each layer of the architecture (from Bronze ⇒ Silver ⇒ Gold layer tables). Medallion architectures are sometimes also referred to as "multi-hop" architectures.
 
-![Medallion_architecture](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvP_MVeAGq5I1vO1nxQAbY2PihP9hRHz357g&usqp=CAU)
+<img src="https://iili.io/HYD8giN.md.png" alt="HYD8giN.md.png" height=30% width=80% border="0">
 
 ### Data Sources Layer
-This layer includes all the raw data that is ingested into the data lake. This can include data from various sources such as databases, APIs, and file systems.
+This contains a txt file with links to all the s3 buckets
 
 ### Ingestion Layer
-This layer includes all the processes and tools used to ingest data from the various sources into the data lake. This can include data extraction, data validation, and data transformation.
+Consists of the code that takes data from the s3 buckets and saves them as csvs in the storage layer. The 3 jupyter notebook files correspond to the conversion of parquets, csvs, and txts in the s3 buckets to csvs in the local file system.
 
 ### Meta Data Layer
-This layer includes all the information about the data in the data lake. This can include information about the data structure, data lineage, and data quality.
+Consists of the final tables formed after processing. The 2 files correspond to the operation management and supply chain final tables.
 
 ### Processing Layer
-This layer includes all the processes and tools used to transform and analyze the data in the data lake. This can include data cleaning, data integration, and data modeling.
+Processing refers to the merging and filtering of the several tables in the storage layer to a single table that contains all our necessary data. These files are located in the meta data layer.
+Processing also contains the code for the creation of the reports. These are created from the tables in the meta data layer and saved in the serving layer.
+As temperature data is live streamed, the data is obtained through kafka services and the reports are generated as it recieves data almost instantly (less than a second) published to a PubNub channel in the form of a dictionary containing all the values to be visualised.
 
 ### Service Layer
-This layer is responsible for providing an API for external systems to access the processed data and perform various operations on it such as querying and visualizing the data.
+The reports generated are located here. 4 reports corresponding to the supply chain and 2 corresponding to operation management. The temperture data can be viewed through Power BI dashboard by subscribing to the PubNub channel mentioned in the temperature processing code in the processing layer. Unfortunately we cannot share our Power BI dashboard as it is limited to Pro users. So a reference image has been provided. Clicking on the link will redirect you to a video that shows the live changes.
 
 ## Technologies used
 
@@ -46,17 +48,19 @@ This project utilizes a variety of technologies to collect, process, and analyze
 PySpark is an open-source library for Python that allows for data processing and analysis using the Spark framework. It allows for the handling of large datasets and the ability to perform complex data operations.
 ### DataLake
 A data lake is a centralized repository that allows for the storage of raw, unstructured data at any scale. It provides a single source of truth for all data in the manufacturing plant.
-### Databricks
-Databricks is a cloud-based platform for data engineering, machine learning, and analytics. It allows for the creation of data pipelines and the ability to run PySpark scripts.
 ### PowerBI
 Power BI is a business intelligence tool that allows for the creation of interactive visualizations and reports. It allows for the representation of data in a user-friendly format.
 
-![power_bi](https://ibb.co/xF383Vt)
+
+
+<img src="https://iili.io/HYDszNt.md.jpg" href="https://www.kapwing.com/videos/63c436e4afa29a01f82db53b" width=700 alt="HYD8giN.md.png">
 
 ### Kafka
 Kafka is an open-source message broker that allows for the real-time processing of data streams. It allows for the integration of data from various sources in real-time.
 ### Python
 Python is a programming language that is used for data processing and analysis. It allows for the creation of scripts and the ability to work with various libraries such as PySpark and Pandas.
 
+###Changes to be implemented in the future
 
+1. As the s3 buckets are updated daily, the extraction and processing can be scheduled to run periodically using azure databricks and the csv can be stored in the blob storage. This can help provide easy access to visualization of the 2 reports as we are already making use of Power BI to view temperature analytics.
 
