@@ -21,10 +21,9 @@ jobs:
     - name: Install dependencies
       run: |
         conda update --all
-        python -m pip freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}
         conda install pyspark
         #pip install -r requirements.txt
-        #conda env update --file environment.yml 
+        conda env update --file environment.yml 
     - name: Lint with flake8
       run: |
         conda install flake8
